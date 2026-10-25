@@ -159,16 +159,6 @@ One test also expected output of 120 but observed 180. That output expectation m
 | `restWhenExhaustedResetsStanceToIdle` | `IDLE` | `EXHAUSTED` | Challenge 1: rest does not reset stance |
 | `transferManaDeductsExactAmount` | Sender mana = 500 | 599 | Challenge 7: wrong parameter is deducted |
 
-## 6. Coverage Checklist Before Submission
-
-- [x] Challenge 1: Test exhaustion, rest, mana restoration, and stance.
-- [x] Challenge 2: Test that an idle surge throws an exception.
-- [ ] Challenge 3: Add or verify a sequence combining surges and spell casts, checking the mana invariant after each operation.
-- [x] Challenge 4: Use a polymorphic `Spellcaster` reference to test the barrier.
-- [ ] Challenge 5: Verify stance and consecutive surge count after a high-power surge; correct the expected output to 360 for the described setup.
-- [ ] Challenge 6: Compare matching high-power sequences on `Wizard` and `Archmage`.
-- [x] Challenge 7: Test the transfer amount of 100 and priority tier of 1.
-- [x] Challenge 8: Compare both overloads and test the safe wrapper.
 
 ## 7. How to Run the Tests
 
